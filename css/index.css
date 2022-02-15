@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  background-color: #1c1c1c;
+  -webkit-box-shadow: 5% #fff;
+          box-shadow: 5% #fff;
+}
+
+.container .row {
+  width: 90%;
+  height: 80%;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2ea3ff), to(#002848));
+  background-image: linear-gradient(#2ea3ff, #002848);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .row .columnone {
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8% 6%;
+  border: 5px #000;
+  z-index: 2222;
+}
+
+.container .row .columnone h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 5em;
+  font-style: normal;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.container .row .columnone h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  font-style: oblique;
+  text-transform: capitalize;
+  color: aliceblue;
+  margin-top: -30px;
+  line-height: 40px;
+}
+
+.container .row .columntwo {
+  width: 40%;
+  margin-top: 40%;
+  margin-left: -10%;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row .columntwo .section {
+  background-color: white;
+  padding: 15px 70px;
+  border-radius: 30px 0px 0px 30px;
+  font-family: 'lato' , sans-serif;
+}
+
+.container .row .columntwo .section a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: lato, sans-serif;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #003666;
+}
+/*# sourceMappingURL=index.css.map */

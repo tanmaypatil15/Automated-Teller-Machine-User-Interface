@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+html{
+    body{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    }
+}
+
+input{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: #1c1c1c;
+
+    .row{
+        width: 90%;
+        height: 90%;
+        border-radius: 25px;
+        background-image: linear-gradient(#2ea3ff, #002848);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        .columnone{
+            width: 20%;
+            max-height: 80%;
+            align-content: space-between ;
+            padding: 0% 8% 0% 6%;
+            margin: 10% 0% 10% 0;
+            border-right: 2px solid rgb(255, 255, 255);
+            border-spacing: 20px;
+            .sectionone{
+                .col-display{
+                    .menu{
+                        position: relative;
+                        bottom: 0;
+                        left: 20px;
+                        display: none;
+                        .onclick{
+                            width: 90%;
+                            height: 40px;
+                            padding: 6px 6px 6px 6px;
+                            margin: 30px 0 30px 0;
+                            text-align: center;
+                            border: 1px solid #050801;
+                            border-radius: 20px;
+                            background-color: transparent;
+                            color: #fff;
+                        }
+                        .onclick:hover{
+                            background-color: #f54263;
+                            color: #050801;
+                            box-shadow: 0 0 5px #f54263, 0 0 25px #f54263, 0 0 50px #f54263, 0 0 200px #f54263;
+                            outline: none;
+                            border: none;
+                        }
+
+                        h1{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 5em;
+                            font-style: normal;
+                            text-transform:uppercase;
+                            color: aliceblue;
+                        }
+
+                        h4{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 1.6em;
+                            font-weight: 400;
+                            font-style: oblique;
+                            text-transform:capitalize;
+                            color: aliceblue;
+                            margin-top: -30px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .columntwo{
+            width: 60%;
+            max-height: 80%;
+            align-content: space-around;
+            justify-content:center;
+            text-align: center;
+            padding: 0% 2% 0% 2%;
+            margin: 3% 0% 10% 0;
+            
+           .sectiontwo{
+                .col-display{
+                    .cal-logo{
+                        h2{
+                            top: 0;
+                            left: 0;
+                            font-size: 2em;
+                            font-family: 'Lato', sans-serif;
+                            text-transform: uppercase;
+                            color: #fff;
+                            text-shadow: 1px 1px 1px black;
+                            margin: 10px;
+                            text-align: center;
+                        }
+                        .massege{
+                            position: absolute;
+                            top: 20%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            p{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 2em;
+                                color: #fff;
+                                margin: 10px;
+                                #msg2{
+                                    color: green;
+                                }
+                            }
+
+                            p{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 2em;
+                                color: #fff;
+                                margin: 10px;
+                                .msg{
+                                    .h4{
+                                        font-family: 'Lato', sans-serif;
+                                        font-size: 2em;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        color: #fff;
+                                        margin: 10px;
+                                    }
+                                }
+                            } 
+                        }
+                    }
+                }
+                .col-calculator{
+                    .cal-display{
+                        .cal-body{
+                            .cal-textview{
+                                width: 250px;
+                                height: 35px;
+                                display: flex;
+                                justify-items: center;
+                                text-align: center;
+                                margin: 10px 30px 10px 30px;
+                                position: relative;
+                                top: 0px;
+                                left: 44%;
+                                transform: translateX(-50%);
+                                font-size: 24px;
+                                border-top: none;
+                                border-right: none;
+                                border-left: none;
+                                border-bottom: 1px solid black; 
+                                color: #fff;
+                            }
+
+                            .cal-button{
+                                width: 50%;
+                                margin: 0% 25%;
+                                text-align: center;
+                                .btn{
+                                    width: 60px;
+                                    height: 60px;
+                                    margin: 6px;
+                                    border-radius: 40px;
+                                    background-color: dodgerblue;
+                                    font-family: lato;
+                                    font-size: 1.5em;
+                                    font-weight: 600;
+                                    color: #fff;
+                                    
+                                }
+                            }
+
+                            .cal-response{
+                                width: 90%;
+                                margin: 4% 5%;
+                                text-align: center;
+
+                                .btn-equal{
+                                    width: 130px;
+                                    height: 40px;
+                                    margin: 6px;
+                                    border-radius: 10px;
+                                    background-color: dodgerblue;
+                                    font-family: lato;
+                                    font-size: 1.2em;
+                                    font-weight: 400;
+                                    color: #fff;
+                                }
+
+                                .btn-reset{
+                                    width: 130px;
+                                    height: 40px;
+                                    margin: 6px;
+                                    border-radius: 10px;
+                                    background-color: dodgerblue;
+                                    font-family: lato;
+                                    font-size: 1.2em;
+                                    font-weight: 400;
+                                    color: #fff;
+                                }
+
+                                .btn-cancel{
+                                    width: 130px;
+                                    height: 40px;
+                                    margin: 6px;
+                                    border-radius: 10px;
+                                    background-color: dodgerblue;
+                                    font-family: lato;
+                                    font-size: 1.2em;
+                                    font-weight: 400;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .columnthree{
+            width: 20%;
+            padding: 0% 8% 0% 6%;
+            margin: 10% 0% 10% 0;
+            border-left: 2px solid rgb(255, 255, 255);
+            border-spacing: 20px;
+            .sectionthree{
+                .col-display{
+                        #mini-st{
+                            width: 100%;
+                            height: 80%;
+                            background-color: #f54263;
+                            display: none;
+                            #msg3{
+                                position: absolute;
+                                font-size: 20px;
+                                top: 54%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+
+                    #captcha{
+                            width: 31px;
+                            height: 22px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: #fff;
+                            position: absolute;
+                            top: 130px;
+                            right: 29%;
+                            background-color: #3e3e3e;
+                            outline: none;
+                            border: none;
+                            display: none;
+                            text-align: center;
+                            line-height: 18px;
+
+                            #captcha:hover{
+                                box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
+                            }
+                        }
+
+                    #menuback{
+                            width: 70px;
+                            height: 30px;
+                            padding: 3px;
+                            margin: 5px;
+                            position: absolute;
+                            top: 50%;
+                            right: 5%;
+                            text-align: center;
+                            border: 1px solid #050801; 
+                            background-color: crimson;
+                            color: #fff;
+                            border-bottom-left-radius: 30px;
+                            display: none;
+                            #menuback:hover{
+                                font-weight: 400;
+                                color: #050801;
+                                box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        // }
+    // }
+// }
+
+
+
+
+// _______________________________________________________________________________ //
+
+
+// .container{
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     place-items: center;
+//     background-color: #1c1c1c;
+// }
+
+// .row{
+//     width: 400px;
+//     height: 600px;
+//     margin: auto;
+//      display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+// }
+// .col{
+  
+    
+//     height: 300px;
+    
+//     padding: 20px;
+//     text-align: center;
+//     position: relative;
+// }
+
+
+// .display{
+//     border: 10px #050801;
+//     // box-shadow: 0 0 0 35px #0a3e47,0 0 0 45px #011c21, inset 0 0 10px rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0,0,0,.2);
+//     width: 100%;
+// }
+// .calculator{
+//     width: 80%;
+//     display: flex;
+//     margin: auto;
+// }
+
+
+// #msg2{
+    
+// }
+// .menu{
+    
+// }
+// .menu 
+// .menu input:hover{
+//             background-color: #f54263;
+//             color: #050801;
+//             box-shadow: 0 0 5px #f54263,
+//                 0 0 25px #f54263,
+//                 0 0 50px #f54263,
+//                 0 0 200px #f54263;
+//     outline: none;
+//     border: none;
+               
+//         }
+
+
+
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NaavJeevan Bank Pvt Ltd</title>                                                                          
+        <link rel="stylesheet" type="text/css" href="css/base.css">  
+        <script src="js/script.js"></script>           
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <!-- <div id="loading" >
+                    <p id="inf" >Please wait 5 seconds</p>
+                    <div id="round1"></div>
+                    <div id="round2"></div>
+                    <div id="round3"></div>
+                    <div id="round4"></div>
+                    <p id="l4" style="color:white;font-weight:bold">Card processing</p>
+                </div> -->
+
+                <div class="columnone">
+                    <div class="sectionone">
+                        <div class="col-display">
+                            <div class="menu" id="menu">
+                                <input type="button" class="onclick" value="WITHDRAW" onclick="withdraw()">
+                                <input type="button" class="onclick" value="CREDIT" onclick="credit()">
+                                <input type="button" class="onclick" value="Mini Statement." onclick="minist()">
+                                <input type="button" class="onclick" value="Exit" onclick="exit()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="columntwo">
+                    <div class="sectiontwo">
+                        <div class="col-display">
+                            <div class="cal-logo">
+                                <h2>NavJeevan Bank Pvt Ltd <br> ATM Machine</h2>
+                            </div>
+                            
+                            <div class="massege">
+                                <p class="msg2" id="msg2"></p>
+                                <p class="msg" id="msg"><h4>Enter your Account No.</h4></p>
+                            </div>
+                        </div>
+
+                        <div class="col-calculator">
+                            <div class="cal-display">
+                                <form class="cal-body" name="forms" id="forms">
+                                    <input type="text" class="cal-textview" name="answer" id="textview" disabled>
+                                    <div class="cal-button">
+                                        <input  type="button" value="1"  onclick="forms.answer.value += '1'"           id="btn1" class="btn">
+                                        <input  type="button" value="2"  onclick="forms.answer.value += '2'"           id="btn2" class="btn">
+                                        <input  type="button" value="3"  onclick="forms.answer.value += '3'"           id="btn3" class="btn">
+                                        <input  type="button" value="4"  onclick="forms.answer.value += '4'"           id="btn4" class="btn">
+                                        <input  type="button" value="5"  onclick="forms.answer.value += '5'"           id="btn5" class="btn">
+                                        <input  type="button" value="6"  onclick="forms.answer.value += '6'"           id="btn6" class="btn">
+                                        <input  type="button" value="7"  onclick="forms.answer.value += '7'"           id="btn7" class="btn">
+                                        <input  type="button" value="8"  onclick="forms.answer.value += '8'"           id="btn8" class="btn">
+                                        <input  type="button" value="9"  onclick="forms.answer.value += '9'"           id="btn9" class="btn">
+                                        <input  type="button" value="0"  onclick="forms.answer.value += '0'"           id="btn0" class="btn">
+                                        <br>
+                                        <!-- <input  type="button" value="Cancel"  onclick="back()" id="btncancel" class="btn-cancel">
+                                        <input  value="Reset" onclick="forms.answer.value=delete(forms.answer.value)" id="btnreset" type="reset" class="btn-reset">
+                                        <input  type="button" value="Proceed"  onclick="cardcheck()"  id="btnproced" class="btn-equal"> -->
+                                    </div>
+                                    <div class="cal-response">
+                                        <input  type="button" value="Clear"  onclick="back()" id="btncancel" class="btn-cancel">
+                                        <input  value="Reset" onclick="forms.answer.value=delete(forms.answer.value)" id="btnreset" type="reset" class="btn-reset">
+                                        <input  type="button" value="Proceed"  onclick="cardcheck()"  id="btnproced" class="btn-equal">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="columnthree">
+                    <div class="sectionthree">
+                        <div class="col-display">
+                            <div id="mini-st">
+                                <p id="msg3">
+                                    <span id="Ac-holder"> <b>Account-holder&nbsp;&nbsp;</b>Tanvi</span> <br>
+                                    <span id="main-balance">5000</span> <br>
+                                    <span id="credit">credit</span> <br>
+                                    <span id="debit">debit</span>
+                                </p>
+                            </div>
+                            <input type="button" value="&#8635;" onclick="captcha()" id="captcha">
+                            <input type="button" value="Back" onclick="menuback()" id="menuback">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </body>
+</html>

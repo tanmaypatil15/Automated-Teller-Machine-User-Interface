@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+html{
+    body{
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    }
+  }
+  
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: #1c1c1c;
+    box-shadow: 5% #fff;
+
+    .row{
+        width: 90%;
+        height: 80%;
+        border-radius: 25px;
+        // background-color: #003da3;
+        background-image: linear-gradient(#2ea3ff, #002848);
+        display: flex;
+        // justify-content: flex-start;
+
+        .columnone{
+            width: 100%;
+            align-items: flex-start;
+            padding: 8% 6%;
+            border: 5px #000;
+            z-index: 2222;
+            h1{
+                font-family: 'Lato', sans-serif;
+                font-size: 5em;
+                font-style: normal;
+                text-transform:uppercase;
+                color: aliceblue;
+            }
+            h4{
+                font-family: 'Lato', sans-serif;
+                font-size: 1.6em;
+                font-weight: 400;
+                font-style: oblique;
+                text-transform:capitalize;
+                color: aliceblue;
+                margin-top: -30px;
+                line-height: 40px;
+            }
+            
+    
+        }
+    
+        .columntwo{
+            width: 40%;
+            margin-top: 40%;
+            margin-left: -10%;
+            align-content: space-around;
+            justify-content:center;
+
+           .section{
+               background-color: rgb(255, 255, 255);
+               padding: 15px 70px;
+               border-radius: 30px 0px 0px 30px;
+               font-family: 'lato' , sans-serif;
+
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: lato, sans-serif;
+                    font-size: 1.5em;
+                    font-style: normal;
+                    font-weight: 800;
+                    text-transform:uppercase;
+                    color: rgb(0, 54, 102);
+                    // padding-bottom: 1px;
+                    // border-bottom: 2px solid #002848;
+                    
+                }
+                // a:hover{
+                //     border: 2px #002848;
+                //     transition-property: width;
+                //     transition-duration: 2s;
+                //     transition-timing-function: ease-in-out;
+                //     transition-delay: 1s;
+                // }
+            }
+        }
+    }
+    
+
+}
