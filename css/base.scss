@@ -13,6 +13,7 @@ input{
     cursor: pointer;
 }
 
+
 .container{
     width: 100%;
     height: 100%;
@@ -32,10 +33,10 @@ input{
         flex-direction: row;
     
         .columnone{
-            width: 20%;
+            width: 25%;
             max-height: 80%;
             align-content: space-between ;
-            padding: 0% 8% 0% 6%;
+            padding: 0% 7% 0% 2%;
             margin: 10% 0% 10% 0;
             border-right: 2px solid rgb(255, 255, 255);
             border-spacing: 20px;
@@ -47,20 +48,23 @@ input{
                         left: 20px;
                         display: none;
                         .onclick{
-                            width: 90%;
-                            height: 40px;
+                            width: 110%;
+                            height: 45px;
+                            font-size: 1em;
+                            font-weight: 700;
+                            font-family: 'Lato', sans-serif;
                             padding: 6px 6px 6px 6px;
-                            margin: 30px 0 30px 0;
+                            margin: 40px 0 40px 0;
                             text-align: center;
-                            border: 1px solid #050801;
-                            border-radius: 20px;
+                            border: 2px solid #ffffff;
+                            border-radius: 10px;
                             background-color: transparent;
                             color: #fff;
                         }
                         .onclick:hover{
-                            background-color: #f54263;
+                            background-color: #ffffff;
                             color: #050801;
-                            box-shadow: 0 0 5px #f54263, 0 0 25px #f54263, 0 0 50px #f54263, 0 0 200px #f54263;
+                            // box-shadow: 0 0 3px #f8f8f8, 0 0 12px #f8f8f8, 0 0 25px #eeeeee, 0 0 100px #e0e0e0;
                             outline: none;
                             border: none;
                         }
@@ -89,7 +93,7 @@ input{
         }
     
         .columntwo{
-            width: 60%;
+            width: 50%;
             max-height: 80%;
             align-content: space-around;
             justify-content:center;
@@ -108,58 +112,43 @@ input{
                             text-transform: uppercase;
                             color: #fff;
                             text-shadow: 1px 1px 1px black;
-                            margin: 10px;
+                            margin: 25px 5px;
                             text-align: center;
                         }
+                    }
+                }
+                .title{
+                    margin-top: 10%;
+                    #acc-title{
                         .massege{
-                            position: absolute;
-                            top: 20%;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            p{
+                            #msg{
                                 font-family: 'Lato', sans-serif;
-                                font-size: 2em;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
                                 color: #fff;
-                                margin: 10px;
-                                #msg2{
-                                    color: green;
+                                margin: 0px 0px;
                                 }
                             }
-
-                            p{
-                                font-family: 'Lato', sans-serif;
-                                font-size: 2em;
-                                color: #fff;
-                                margin: 10px;
-                                .msg{
-                                    .h4{
-                                        font-family: 'Lato', sans-serif;
-                                        font-size: 2em;
-                                        font-weight: 600;
-                                        text-transform: uppercase;
-                                        color: #fff;
-                                        margin: 10px;
-                                    }
-                                }
-                            } 
                         }
                     }
                 }
                 .col-calculator{
                     .cal-display{
                         .cal-body{
+                            margin-top: 2%;
                             .cal-textview{
                                 width: 250px;
                                 height: 35px;
-                                display: flex;
                                 justify-items: center;
                                 text-align: center;
                                 margin: 10px 30px 10px 30px;
-                                position: relative;
-                                top: 0px;
-                                left: 44%;
-                                transform: translateX(-50%);
+                                // position: relative;
+                                // top: 0px;
+                                // left: 44%;
+                                // transform: translateX(-50%);
                                 font-size: 24px;
+                                font-family: 'Lato', sans-serif;
                                 border-top: none;
                                 border-right: none;
                                 border-left: none;
@@ -168,16 +157,17 @@ input{
                             }
 
                             .cal-button{
-                                width: 50%;
+                                width: 51%;
                                 margin: 0% 25%;
                                 text-align: center;
+
                                 .btn{
                                     width: 60px;
                                     height: 60px;
                                     margin: 6px;
                                     border-radius: 40px;
                                     background-color: dodgerblue;
-                                    font-family: lato;
+                                    font-family: 'Lato', sans-serif;
                                     font-size: 1.5em;
                                     font-weight: 600;
                                     color: #fff;
@@ -186,8 +176,8 @@ input{
                             }
 
                             .cal-response{
-                                width: 90%;
-                                margin: 4% 5%;
+                                width: 100%;
+                                margin: 5% 0%;
                                 text-align: center;
 
                                 .btn-equal{
@@ -196,7 +186,7 @@ input{
                                     margin: 6px;
                                     border-radius: 10px;
                                     background-color: dodgerblue;
-                                    font-family: lato;
+                                    font-family: 'Lato', sans-serif;
                                     font-size: 1.2em;
                                     font-weight: 400;
                                     color: #fff;
@@ -208,7 +198,7 @@ input{
                                     margin: 6px;
                                     border-radius: 10px;
                                     background-color: dodgerblue;
-                                    font-family: lato;
+                                    font-family: 'Lato', sans-serif;
                                     font-size: 1.2em;
                                     font-weight: 400;
                                     color: #fff;
@@ -220,7 +210,7 @@ input{
                                     margin: 6px;
                                     border-radius: 10px;
                                     background-color: dodgerblue;
-                                    font-family: lato;
+                                    font-family: 'Lato', sans-serif;
                                     font-size: 1.2em;
                                     font-weight: 400;
                                     color: #fff;
@@ -235,31 +225,91 @@ input{
 
         .columnthree{
             width: 20%;
-            padding: 0% 8% 0% 6%;
+            // padding: 0% 8% 0% 6%;
+            padding: 0% 13% 0% 5%;
             margin: 10% 0% 10% 0;
             border-left: 2px solid rgb(255, 255, 255);
             border-spacing: 20px;
             .sectionthree{
                 .col-display{
-                        #mini-st{
-                            width: 100%;
-                            height: 80%;
-                            background-color: #f54263;
-                            display: none;
-                            #msg3{
-                                position: absolute;
-                                font-size: 20px;
-                                top: 54%;
-                                left: 50%;
-                                transform: translateX(-50%);
+                    #acc-status{
+                        .massege{
+                            #msg1{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                }
+
+                            #msg2{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                }
+                            #msg4{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                }
+                            #msg5{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                }
+                            #msg6{
+                                font-family: 'Lato', sans-serif;
+                                font-size: 1.2em;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: rgb(0, 0, 0);
+                                margin-bottom: 15px;
+                                }
                             }
                         }
                     }
+                    #mini-st{
+                        // width: 130%;
+                        // height: 40%;
+                        // padding: 20px 20px 20px 20px;
+                        // border-radius: 10px;
+                        // background-color: #fff;
 
+                        // box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 25px #ffffff;
+                        #statement{
+                            position: relative;
+                            font-size: 20px;
+                            font-family: 'Lato', sans-serif;
+                            #Ac-holder{
+                                margin-bottom: 10px;
+                            }
+                            #main-balance{
+                                margin-bottom: 10px;
+                            }
+                            #credit{
+                                margin-bottom: 10px;
+                            }
+                            #debit{
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                
                     #captcha{
                             width: 31px;
                             height: 22px;
                             font-size: 18px;
+                            font-family: 'Lato', sans-serif;
                             font-weight: bold;
                             color: #fff;
                             position: absolute;
@@ -271,39 +321,40 @@ input{
                             display: none;
                             text-align: center;
                             line-height: 18px;
-
-                            #captcha:hover{
-                                box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
-                            }
+                        #captcha:hover{
+                            box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
                         }
+                    }
 
                     #menuback{
-                            width: 70px;
-                            height: 30px;
-                            padding: 3px;
-                            margin: 5px;
+                            width: 20%;
+                            height: 5%;
+                            // padding: 10px 0px 10px 0px;
+                            // margin: 10px 0px 10px 0px;
+                            font-family: 'Lato', sans-serif;
                             position: absolute;
-                            top: 50%;
-                            right: 5%;
+                            top: 75%;
+                            // right: 5%;
                             text-align: center;
-                            border: 1px solid #050801; 
-                            background-color: crimson;
-                            color: #fff;
-                            border-bottom-left-radius: 30px;
+                            font-size: 1.2em;
+                            font-weight: 600;
+                            border-radius: 10px; 
+                            background-color: #fff;
+                            color: #000;
+                            // border-bottom-left-radius: 30px;
                             display: none;
-                            #menuback:hover{
-                                font-weight: 400;
-                                color: #050801;
-                                box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
-                                outline: none;
-                                border: none;
-                            }
+                        #menuback:hover{
+                            color: #000;
+                            box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
+                            outline: none;
+                            border: none;
                         }
                     }
                 }
             }
-        // }
+        }
     // }
+
 // }
 
 
@@ -373,4 +424,4 @@ input{
 
 
 
-}
+// }

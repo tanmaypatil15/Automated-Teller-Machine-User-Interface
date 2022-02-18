@@ -44,11 +44,11 @@ input {
 }
 
 .container .row .columnone {
-  width: 20%;
+  width: 25%;
   max-height: 80%;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  padding: 0% 8% 0% 6%;
+  padding: 0% 7% 0% 2%;
   margin: 10% 0% 10% 0;
   border-right: 2px solid white;
   border-spacing: 20px;
@@ -62,22 +62,23 @@ input {
 }
 
 .container .row .columnone .sectionone .col-display .menu .onclick {
-  width: 90%;
-  height: 40px;
+  width: 110%;
+  height: 45px;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
   padding: 6px 6px 6px 6px;
-  margin: 30px 0 30px 0;
+  margin: 40px 0 40px 0;
   text-align: center;
-  border: 1px solid #050801;
-  border-radius: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
   background-color: transparent;
   color: #fff;
 }
 
 .container .row .columnone .sectionone .col-display .menu .onclick:hover {
-  background-color: #f54263;
+  background-color: #ffffff;
   color: #050801;
-  -webkit-box-shadow: 0 0 5px #f54263, 0 0 25px #f54263, 0 0 50px #f54263, 0 0 200px #f54263;
-          box-shadow: 0 0 5px #f54263, 0 0 25px #f54263, 0 0 50px #f54263, 0 0 200px #f54263;
   outline: none;
   border: none;
 }
@@ -102,7 +103,7 @@ input {
 }
 
 .container .row .columntwo {
-  width: 60%;
+  width: 50%;
   max-height: 80%;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
@@ -122,60 +123,35 @@ input {
   text-transform: uppercase;
   color: #fff;
   text-shadow: 1px 1px 1px black;
-  margin: 10px;
+  margin: 25px 5px;
   text-align: center;
 }
 
-.container .row .columntwo .sectiontwo .col-display .cal-logo .massege {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.container .row .columntwo .sectiontwo .title {
+  margin-top: 10%;
 }
 
-.container .row .columntwo .sectiontwo .col-display .cal-logo .massege p {
+.container .row .columntwo .sectiontwo .title #acc-title .massege #msg {
   font-family: 'Lato', sans-serif;
-  font-size: 2em;
-  color: #fff;
-  margin: 10px;
-}
-
-.container .row .columntwo .sectiontwo .col-display .cal-logo .massege p #msg2 {
-  color: green;
-}
-
-.container .row .columntwo .sectiontwo .col-display .cal-logo .massege p {
-  font-family: 'Lato', sans-serif;
-  font-size: 2em;
-  color: #fff;
-  margin: 10px;
-}
-
-.container .row .columntwo .sectiontwo .col-display .cal-logo .massege p .msg .h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  margin: 10px;
+  margin: 0px 0px;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-textview {
+.container .row .columntwo .col-calculator .cal-display .cal-body {
+  margin-top: 2%;
+}
+
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-textview {
   width: 250px;
   height: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   justify-items: center;
   text-align: center;
   margin: 10px 30px 10px 30px;
-  position: relative;
-  top: 0px;
-  left: 44%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   font-size: 24px;
+  font-family: 'Lato', sans-serif;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -183,94 +159,146 @@ input {
   color: #fff;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-button {
-  width: 50%;
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-button {
+  width: 51%;
   margin: 0% 25%;
   text-align: center;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-button .btn {
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-button .btn {
   width: 60px;
   height: 60px;
   margin: 6px;
   border-radius: 40px;
   background-color: dodgerblue;
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   font-size: 1.5em;
   font-weight: 600;
   color: #fff;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-response {
-  width: 90%;
-  margin: 4% 5%;
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-response {
+  width: 100%;
+  margin: 5% 0%;
   text-align: center;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-response .btn-equal {
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-response .btn-equal {
   width: 130px;
   height: 40px;
   margin: 6px;
   border-radius: 10px;
   background-color: dodgerblue;
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   color: #fff;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-response .btn-reset {
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-response .btn-reset {
   width: 130px;
   height: 40px;
   margin: 6px;
   border-radius: 10px;
   background-color: dodgerblue;
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   color: #fff;
 }
 
-.container .row .columntwo .sectiontwo .col-calculator .cal-display .cal-body .cal-response .btn-cancel {
+.container .row .columntwo .col-calculator .cal-display .cal-body .cal-response .btn-cancel {
   width: 130px;
   height: 40px;
   margin: 6px;
   border-radius: 10px;
   background-color: dodgerblue;
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
   color: #fff;
 }
 
-.container .row .columnthree {
+.container .columnthree {
   width: 20%;
-  padding: 0% 8% 0% 6%;
+  padding: 0% 13% 0% 5%;
   margin: 10% 0% 10% 0;
   border-left: 2px solid white;
   border-spacing: 20px;
 }
 
-.container .row .columnthree .sectionthree .col-display #mini-st {
-  width: 100%;
-  height: 80%;
-  background-color: #f54263;
-  display: none;
+.container .columnthree .sectionthree .col-display #acc-status .massege #msg1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
 }
 
-.container .row .columnthree .sectionthree .col-display #mini-st #msg3 {
-  position: absolute;
+.container .columnthree .sectionthree .col-display #acc-status .massege #msg2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.container .columnthree .sectionthree .col-display #acc-status .massege #msg4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.container .columnthree .sectionthree .col-display #acc-status .massege #msg5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.container .columnthree .sectionthree .col-display #acc-status .massege #msg6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.container .columnthree .sectionthree #mini-st #statement {
+  position: relative;
   font-size: 20px;
-  top: 54%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  font-family: 'Lato', sans-serif;
 }
 
-.container .row .columnthree .sectionthree #captcha {
+.container .columnthree .sectionthree #mini-st #statement #Ac-holder {
+  margin-bottom: 10px;
+}
+
+.container .columnthree .sectionthree #mini-st #statement #main-balance {
+  margin-bottom: 10px;
+}
+
+.container .columnthree .sectionthree #mini-st #statement #credit {
+  margin-bottom: 10px;
+}
+
+.container .columnthree .sectionthree #mini-st #statement #debit {
+  margin-bottom: 10px;
+}
+
+.container .columnthree .sectionthree #captcha {
   width: 31px;
   height: 22px;
   font-size: 18px;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #fff;
   position: absolute;
@@ -284,30 +312,28 @@ input {
   line-height: 18px;
 }
 
-.container .row .columnthree .sectionthree #captcha #captcha:hover {
+.container .columnthree .sectionthree #captcha #captcha:hover {
   -webkit-box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
           box-shadow: 0 0 5px #3e3e3e, 0 0 25px white, 0 0 50px #3e3e3e, 0 0 200px #3e3e3e;
 }
 
-.container .row .columnthree .sectionthree #menuback {
-  width: 70px;
-  height: 30px;
-  padding: 3px;
-  margin: 5px;
+.container .columnthree .sectionthree #menuback {
+  width: 20%;
+  height: 5%;
+  font-family: 'Lato', sans-serif;
   position: absolute;
-  top: 50%;
-  right: 5%;
+  top: 75%;
   text-align: center;
-  border: 1px solid #050801;
-  background-color: crimson;
-  color: #fff;
-  border-bottom-left-radius: 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
   display: none;
 }
 
-.container .row .columnthree .sectionthree #menuback #menuback:hover {
-  font-weight: 400;
-  color: #050801;
+.container .columnthree .sectionthree #menuback #menuback:hover {
+  color: #000;
   -webkit-box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
           box-shadow: 0 0 5px crimson, 0 0 25px crimson, 0 0 50px crimson, 0 0 200px crimson;
   outline: none;
