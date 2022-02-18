@@ -10,23 +10,14 @@
     <body>
         <div class="container">
             <div class="row">
-                <!-- <div id="loading" >
-                    <p id="inf" >Please wait 5 seconds</p>
-                    <div id="round1"></div>
-                    <div id="round2"></div>
-                    <div id="round3"></div>
-                    <div id="round4"></div>
-                    <p id="l4" style="color:white;font-weight:bold">Card processing</p>
-                </div> -->
-
                 <div class="columnone">
                     <div class="sectionone">
                         <div class="col-display">
                             <div class="menu" id="menu">
                                 <input type="button" class="onclick" value="WITHDRAW" onclick="withdraw()">
                                 <input type="button" class="onclick" value="CREDIT" onclick="credit()">
-                                <input type="button" class="onclick" value="Mini Statement." onclick="minist()">
-                                <input type="button" class="onclick" value="Exit" onclick="exit()">
+                                <input type="button" class="onclick" value="MINI STATEMENT" onclick="minist()">
+                                <input type="button" class="onclick" value="EXIT" onclick="exit()">
                             </div>
                         </div>
                     </div>
@@ -40,14 +31,15 @@
                             <div class="cal-logo">
                                 <h2>NavJeevan Bank Pvt Ltd <br> ATM Machine</h2>
                             </div>
-                            
-                            <div class="massege">
-                                <p class="msg2" id="msg2"></p>
-                                <p class="msg" id="msg"></p>
-                                <!-- <h4>Enter your Account No.</h4> -->
+                        </div>
+                        <div class="title">
+                            <div id="acc-title">
+                                <div class="massege">
+                                    <h4 class="msg" id="msg">Enter your Account No.</h4>
+                                    <!-- <p class="msg2" id="msg2"></p> -->
+                                </div>
                             </div>
                         </div>
-
                         <div class="col-calculator">
                             <div class="cal-display">
                                 <form class="cal-body" name="forms" id="forms">
@@ -64,9 +56,6 @@
                                         <input  type="button" value="9"  onclick="forms.answer.value += '9'"           id="btn9" class="btn">
                                         <input  type="button" value="0"  onclick="forms.answer.value += '0'"           id="btn0" class="btn">
                                         <br>
-                                        <!-- <input  type="button" value="Cancel"  onclick="back()" id="btncancel" class="btn-cancel">
-                                        <input  value="Reset" onclick="forms.answer.value=delete(forms.answer.value)" id="btnreset" type="reset" class="btn-reset">
-                                        <input  type="button" value="Proceed"  onclick="cardcheck()"  id="btnproced" class="btn-equal"> -->
                                     </div>
                                     <div class="cal-response">
                                         <input  type="button" value="Clear"  onclick="back()" id="btncancel" class="btn-cancel">
@@ -83,16 +72,29 @@
                 <div class="columnthree">
                     <div class="sectionthree">
                         <div class="col-display">
+                            <div id="acc-status">
+                                <div class="massege">
+                                    <p class="msg6" id="msg6"></p>
+                                    <p class="msg5" id="msg5"></p>
+                                    <p class="msg4" id="msg4"></p>
+                                    <p class="msg1" id="msg1"></p> 
+                                    <p class="msg2" id="msg2"></p>
+                                </div>
+                            </div>
                             <div id="mini-st">
-                                <p id="msg3">
-                                    <span id="Ac-holder"> <b>Account-holder&nbsp;&nbsp;</b>Tanvi</span> <br>
-                                    <span id="main-balance">5000</span> <br>
-                                    <span id="credit">credit</span> <br>
-                                    <span id="debit">debit</span>
+                                <p id="statement">
+                                    <span id="Ac-holder"></span>
+                                    <br>
+                                    <span id="main-balance"></span>
+                                    <br>
+                                    <span id="credit"></span>
+                                    <br>
+                                    <span id="debit"></span>
+                                    <br>
                                 </p>
                             </div>
                             <input type="button" value="&#8635;" onclick="captcha()" id="captcha">
-                            <input type="button" value="Back" onclick="menuback()" id="menuback">
+                            <input type="button" value="Go Back" onclick="menuback()" id="menuback">
                         </div>
                     </div>
                 </div>
